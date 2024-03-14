@@ -11,7 +11,6 @@ def l2l_dt(value):
     if isinstance(value, datetime):
         return value.strftime("%Y-%m-%d %H:%M:%S")
     try:
-    
         return datetime.strptime(value, "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
     except ValueError:
         raise ValueError('Invalid date string')
