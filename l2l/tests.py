@@ -4,10 +4,7 @@ from datetime import datetime
 from l2l.templatetags.l2l_extras import l2l_dt
 
 
-class MyTestCase(TestCase):
-    def test_example(self):
-        self.assertEqual(1 + 1, 2)
-        
+class TemplateFilterTests(TestCase):
     def test_l2l_dt_string(self):
         date_string = "2024-05-05T17:00:00"
         filtered_date = l2l_dt(date_string)
