@@ -1,5 +1,4 @@
 from django.test import TestCase
-from django.template import Template, Context
 from datetime import datetime
 from l2l.templatetags.l2l_extras import l2l_dt
 
